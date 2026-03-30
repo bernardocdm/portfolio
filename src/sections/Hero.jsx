@@ -6,6 +6,7 @@ import {
   Download,
 } from "lucide-react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import DownloadCV from "../components/DownloadCV";
 
 /* eslint-disable react-hooks/purity */
 export default function Hero() {
@@ -73,15 +74,12 @@ export default function Hero() {
                 Contact me
               </Button>
 
-              <AnimatedBorderButton>
-                  <Download className="w-5 h-5"/>
-                    Download CV
-              </AnimatedBorderButton>
+              <DownloadCV />
             </div>
 
             {/* SOCIAL LINKS */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-muted-foreground">Follow me: </span>
+              <span className="text-sm text-muted-foreground">How to reach me: </span>
               {[
                 { icon: FaGithub, href: "https://github.com/bernardocdm" },
                 { icon: FaLinkedin, href: "https://www.linkedin.com/in/bernardocdm/" },

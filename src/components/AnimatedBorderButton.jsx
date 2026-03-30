@@ -32,6 +32,7 @@ export const AnimatedBorderButton = ({ children }) => {
       </svg>
       <span className="relative z-10 flex items-center justify-center gap-2">
         {children}
+
       </span>
     </button>
   );
