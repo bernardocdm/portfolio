@@ -8,6 +8,19 @@ import {
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import DownloadCV from "../components/DownloadCV";
 
+const skills = [
+  "HTML",
+  "CSS",
+  "React",
+  "Node.js",
+  "PostgreSQL",
+  "Vercel",
+  "Tailwind CSS",
+  "Git",
+  "Java",
+  "Laravel",
+]
+
 /* eslint-disable react-hooks/purity */
 export default function Hero() {
   return (
@@ -79,7 +92,7 @@ export default function Hero() {
 
             {/* SOCIAL LINKS */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-muted-foreground">How to reach me: </span>
+              <span className="text-xl text-muted-foreground">How to reach me: </span>
               {[
                 { icon: FaGithub, href: "https://github.com/bernardocdm" },
                 { icon: FaLinkedin, href: "https://www.linkedin.com/in/bernardocdm/" },
@@ -92,12 +105,52 @@ export default function Hero() {
                   rel="noopener noreferrer"
                   className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"
                 >
-                  {<social.icon className="w-5 h-5" />}
+                  {<social.icon className="w-6 h-6" />}
                 </a>
               ))}
             </div>
           </div>
           {/* RIGHT COLUMN - PROFILE IMAGE  */}
+          <div className="relative animation-delay-300">
+          {/* PROFILE IMAGE  */}
+            <div className="relative mx-auto">
+              <div
+                className="absolute inset-0 
+              rounded-full bg-linear-to-br 
+              from-primary/30 via-transparent 
+              to-primary/10 blur-2xl animate-pulse"
+              />
+              <div className="relative glass rounded-full p-2 glow-border">
+                <img 
+                  src="/profile-photo.jpg" 
+                  alt="Bernardo Carvalho" 
+                  className="w-full max-w-140px sm:max-w-160px md:max-w-200px aspect-square h-200 object-cover rounded-full border-2 border-border hover:border-primary/50 transition-all duration-1000 animate-float"
+                  />
+
+                    {/* FLOATING BADGE  */}
+                    <div className="absolute bottom-[10%] right-0 glass rounded-xl px-4 py-2">
+                      <div className="flex items-center gap-3">
+                        < div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/> 
+                        <span className="text-sm font-medium">Let's Work!</span>
+                      </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* SKILLS SECTION  */}
+        <div className="mt-20 animate-fade-in animation-delay-600">
+          <p className="text-xl text-muted-foreground mb-6 text-center">Technologies I work with</p>
+          <div className="relative overflow-hidden">
+            <div className="flex animate-marquee">
+              {[...skills, ...skills].map((skill, idx) => (
+                <div key={idx} className="shrink-0 px-8 py-4">
+                  <span className="text-xl text-muted-foreground hover:text-muted-foreground transition-colors">{skill}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
