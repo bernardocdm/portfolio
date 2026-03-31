@@ -141,11 +141,11 @@ export default function Hero() {
 
         {/* SKILLS SECTION  */}
         <div className="mt-20 animate-fade-in animation-delay-600">
-          <p className="text-xl text-muted-foreground mb-6 text-center">Technologies I work with</p>
+          <p className="text-4xl font-bold mb-6 text-center">Technologies I work with</p>
           <div className="relative overflow-hidden">
             <div className="flex animate-marquee">
               {[...skills, ...skills].map((skill, idx) => (
-                <div key={idx} className="shrink-0 px-8 py-4">
+                <div key={idx} className="shrink-0 px-8 py-20 ">
                   <span className="text-xl text-muted-foreground hover:text-muted-foreground transition-colors">{skill}</span>
                 </div>
               ))}

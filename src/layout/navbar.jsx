@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "../components/Button";
 import { Menu, X} from "lucide-react";
-import { useEffect } from "react";    
 
 const navLinks = [
     { href: "#about", label:"About" },
@@ -12,24 +11,10 @@ const navLinks = [
 // rfce
 export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 50);
-        };
-
-        window.addEventListener("scroll", handleScroll);
-
-        return () =>  window.removeEventListener("scroll", handleScroll);
-    }, []);
 
     return (
         <header
-            className={`fixed top-0 left-0 right-0 transition-all duration-500 ${
-                isScrolled ? "glass-strong py-3" : "bg-transparent py-5"
-            }  z-50`}
-            >
+            className="absolute top-0 left-0 right-0 transition-all duration-500 glass bg-transparent py-3 z-50">
             <nav className="container mx-auto px-6 flex items-center justify-between">
                 <a href="#" className="text-xl font-bold tracking-tight">
                     BC<span className="text-primary"></span>
@@ -49,7 +34,7 @@ export const Navbar = () => {
                 </div>
 
                 {/* PATTERN OF COMPONENTS BUTTONS - CTA  */}
-                <div className="hidden md:block">
+                <div className="hidden md:block ">
                     <Button size="sm">Contact Me</Button>
                 </div>
 
@@ -65,7 +50,7 @@ export const Navbar = () => {
                 {/* MOBILE MENU  */}
                 {isMobileMenuOpen && (
 
-                    <div className="md:hidden glass">
+                <div className="md:hidden glass">
                     <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                             {navLinks.map((link, index) => (
                                 <a 
