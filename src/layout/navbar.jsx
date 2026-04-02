@@ -16,8 +16,8 @@ export const Navbar = () => {
         <header
             className="absolute top-0 left-0 right-0 transition-all duration-500 glass bg-transparent py-3 z-50">
             <nav className="container mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="text-xl font-bold tracking-tight">
-                    BC<span className="text-primary"></span>
+                <a href="#hero" className=" font-bold tracking-tight">
+                    Bernardo Carvalho<span className="text-primary"></span>
                 </a>
 
                 <div className="flex items-center gap-1">
