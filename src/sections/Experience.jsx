@@ -18,9 +18,9 @@ export default function Experience() {
   return (
     <section id="experience">
       <div className="flex flex-col items-center">
-        <span className=" text-sm uppercase"> My experience</span>
+        <span className=" text-sm uppercase"> Experience</span>
         <div className="p-4 w-full max-w-4xl">
-          <h2 className="p-8 text-5xl text-center text-primary font-bold">Where <span className="italic font-serif text-white font-normal">I've passed</span></h2>
+          <h2 className="p-8 text-5xl text-center text-primary font-bold">My <span className="italic font-serif text-white font-normal">Experiences</span></h2>
           <div className="glass rounded-2xl animate-fade-in animation-delay-400 p-6">
             <div className="space-y-8">
               {experiences.map((item, i) => (
