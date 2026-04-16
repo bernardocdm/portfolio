@@ -191,8 +191,8 @@ export default function Contact() {
           </div>
 
                {/* Contact Info */}
-            <div className="glass rounded-3xl flex items-center justify-center  animate-fade-in animation-delay-400">
-              <div className="space-y-14 ">
+            <div className="glass rounded-3xl flex items-center border border-primary/30 justify-center  animate-fade-in animation-delay-400">
+              <div className="space-y-8 w-full">
                 {contactInfo.map((item, i) => (
                   <a
                     key={i}

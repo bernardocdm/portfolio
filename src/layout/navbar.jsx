@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Button } from "../components/Button";
-import { Menu, X} from "lucide-react";
+import { Menu, X, MessageCircle} from "lucide-react";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import { FaWhatsapp  } from "react-icons/fa";
 
 const navLinks = [
     { href: "#about", label:"About" },
@@ -33,9 +35,21 @@ export const Navbar = () => {
                     </div>
                 </div>
 
-                {/* PATTERN OF COMPONENTS BUTTONS - CTA  */}
-                <div className="hidden md:block ">
-                    <Button size="sm">Contact Me</Button>
+                <div className="flex items-center gap-4">
+                    <div className="">
+                        <LanguageSwitcher />
+                    </div>
+
+                    {/* PATTERN OF COMPONENTS BUTTONS - CTA  */}
+                    <div className="hidden md:block">
+                        <Button size="sm">
+                            <span                       
+                            className="flex items-center gap-2.5">                             
+                              Contact Me
+                            </span>
+                        <FaWhatsapp />
+                        </Button>
+                    </div>
                 </div>
 
 
