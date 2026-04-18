@@ -8,7 +8,7 @@ export default function Experience() {
       description:"Atuação no suporte técnico a usuários internos, auxiliando na resolução de problemas relacionados a sistemas, equipamentos e infraestrutura de TI. Apoio na manutenção de sistemas e acompanhamento de demandas técnicas do setor.",
     },
     {
-      company:"Controlado Geral do Estado de Minas Gerais",
+      company:"Controladoria Geral do Estado de Minas Gerais",
       position:"Software Developer Intern",
       date:"10/04/2026 - Momento ",
       description:"Participação no desenvolvimento e manutenção de sistemas internos, colaborando com a equipe na implementação de funcionalidades, correção de bugs e melhoria de aplicações utilizadas pela instituição.",

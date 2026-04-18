@@ -20,6 +20,7 @@ import {
   SiVercel,
   SiTailwindcss,
 } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const skills = [
   { name: "HTML", icon: FaHtml5 },
@@ -36,6 +37,8 @@ const skills = [
 
 /* eslint-disable react-hooks/purity */
 export default function Hero() {
+  const { t } = useTranslation(); 
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
@@ -63,13 +66,7 @@ export default function Hero() {
             {/* HEADLINE  */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-200">
-                Software <span className="text-primary glow-text">developer</span>
-                <br />
-                learning with
-                <br />
-                <span className="font-serif italic font-normal text-white">
-                  precision
-                </span>
+                {t("hero.titleStart")} <span className="text-primary glow-text">{t("hero.developer")}</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-400">
                 Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.

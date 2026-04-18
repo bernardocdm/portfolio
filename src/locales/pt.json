@@ -1,4 +1,8 @@
 {
-  "hero.title": "Desenvolvedor Frontend",
-  "hero.subtitle": "Eu crio experiências web modernas"
+  "hero": {
+    "titleStart": "Desenvolvedor",
+    "developer": "de software",
+    "titleMiddle": "aprendendo com",
+    "titleEnd": "precisão"
+  }
 }
