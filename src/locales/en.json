@@ -1,6 +1,41 @@
 {
   "hero": {
+    "first": "SOFTWARE ENGINEER - FULLSTACK DEVELOPER CURRENTLY LEARNING REACT + NODE JS ",
     "titleStart": "Software",
-    "developer": "developer"
+    "developer": "developer",
+    "introduce":"Hi, I'm Bernardo Carvalho, a software engineer specializing in React, Nest.js, and TypeScript. I build scalable, performant web applications that users love.",
+    "contact": "Contact me",
+    "reach":"How to reach me:",
+    "work":"Let's work!",
+    "stack":"My Stack",
+    "technologies":"Technologies",
+    "stacksec":"I work with"
+  },
+
+   "about": {
+    "label": "About me",
+    "title": "Building",
+    "titleAccent": "the Future",
+    "paragraph1": "I'm a passionate software engineer with over 5 years of experience crafting digital products that make a difference. My journey started with a curiosity for how things work on the web, and it has evolved into a deep expertise in modern frontend technologies.",
+    "paragraph2": "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.",
+    "capabilities": {
+      "fullstack": {
+        "title": "Fullstack Development",
+        "description": "Creating modern, interactive web applications with clean and maintainable code, while designing robust server-side solutions and APIs that support scalable applications."
+      },
+      "cleanCode": {
+        "title": "Clean Code",
+        "description": "Writing readable, consistent, and maintainable code that is easy to extend."
+      },
+      "responsive": {
+        "title": "Responsive Design",
+        "description": "Building interfaces that look and feel great across mobile, tablet, and desktop."
+      },
+      "architecture": {
+        "title": "Component Architecture",
+        "description": "Structuring reusable components that keep projects scalable and organized."
+      }
+    }
   }
 }
+

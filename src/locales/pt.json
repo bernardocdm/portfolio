@@ -1,8 +1,40 @@
 {
   "hero": {
+    "first": "ENGENHEIRO DE SOFTWARE - DESENVOLVEDOR FULLSTACK ATUALMENTE APRENDENDO REACT + NODE JS",
     "titleStart": "Desenvolvedor",
     "developer": "de software",
-    "titleMiddle": "aprendendo com",
-    "titleEnd": "precisão"
+    "introduce": "Olá, eu sou Bernardo Carvalho, um engenheiro de software especializado em React, Nest.js e TypeScript. Eu desenvolvo aplicações web escaláveis e performáticas que os usuários adoram.",
+    "contact": "Entre em contato",
+    "reach": "Como falar comigo:",
+    "work": "Vamos trabalhar juntos!",
+    "stack": "Minha Stack",
+    "technologies":"Tecnologias",
+    "stacksec": "que utilizo"
+  },
+
+  "about": {
+    "label": "Sobre mim",
+    "title": "Construindo",
+    "titleAccent": "o Futuro",
+    "paragraph1": "Sou um engenheiro de software apaixonado, com mais de 5 anos de experiência criando produtos digitais que fazem a diferença. Minha jornada começou com a curiosidade sobre como as coisas funcionam na web e evoluiu para uma sólida especialização em tecnologias modernas de frontend.",
+    "paragraph2": "Quando não estou programando, você provavelmente vai me encontrar explorando novas tecnologias, contribuindo para projetos open source ou compartilhando conhecimento com a comunidade de desenvolvedores.",
+    "capabilities": {
+      "fullstack": {
+        "title": "Desenvolvimento Fullstack",
+        "description": "Criando aplicações web modernas e interativas com código limpo e de fácil manutenção, além de projetar soluções robustas no servidor e APIs que sustentam aplicações escaláveis."
+      },
+      "cleanCode": {
+        "title": "Código Limpo",
+        "description": "Escrevendo código legível, consistente e de fácil manutenção, simples de evoluir e expandir."
+      },
+      "responsive": {
+        "title": "Design Responsivo",
+        "description": "Construindo interfaces que funcionam e ficam ótimas em mobile, tablet e desktop."
+      },
+      "architecture": {
+        "title": "Arquitetura de Componentes",
+        "description": "Estruturando componentes reutilizáveis para manter os projetos escaláveis e organizados."
+      }
+    }
   }
 }

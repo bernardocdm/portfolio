@@ -35,7 +35,6 @@ const skills = [
   { name: "Laravel", icon: FaLaravel },
 ]
 
-/* eslint-disable react-hooks/purity */
 export default function Hero() {
   const { t } = useTranslation(); 
 
@@ -60,7 +59,7 @@ export default function Hero() {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse animation-delay-200" />
-                SOFTWARE ENGINEER - FULLSTACK DEVELOPER CURRENTLY LEARNING REACT + NODE JS 
+                {t("hero.first")}
               </span>
             </div>
             {/* HEADLINE  */}
@@ -69,14 +68,14 @@ export default function Hero() {
                 {t("hero.titleStart")} <span className="text-primary glow-text">{t("hero.developer")}</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-400">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                {t("hero.introduce")}
               </p>
             </div>
 
             {/* BUTTONS REACH ME  */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <Button size="lg">
-                Contact me
+                {t("hero.contact")}
               </Button>
 
               <DownloadCV />
@@ -84,7 +83,7 @@ export default function Hero() {
 
             {/* SOCIAL LINKS */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-xl text-muted-foreground">How to reach me: </span>
+              <span className="text-xl text-muted-foreground">{t("hero.reach")}</span>
               {[
                 { icon: FaGithub, href: "https://github.com/bernardocdm" },
                 { icon: FaLinkedin, href: "https://www.linkedin.com/in/bernardocdm/" },
@@ -123,7 +122,7 @@ export default function Hero() {
                 <div className="absolute bottom-[10%] right-0 glass rounded-xl px-4 py-2">
                   <div className="flex items-center gap-3">
                     < div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/> 
-                    <span className="text-sm font-medium">Let's Work!</span>
+                    <span className="text-sm font-medium">{t("hero.work")}</span>
                   </div>
                 </div>
               </div>
@@ -134,9 +133,9 @@ export default function Hero() {
         {/* SKILLS SECTION  */}
         <div className="mt-20 animate-fade-in animation-delay-600">
           <div className="flex flex-col items-center">
-            <span className="text-sm text-center text-white font-medium tracking-wider uppercase animate-fade-in mb-4"> My Stack</span>
-            <h2 className="text-5xl text-secondary-foreground font-bold mb-6 text-center">Technologies 
-              <span className="text-white font-serif italic font-normal"> I work with</span>
+            <span className="text-sm text-center text-white font-medium tracking-wider uppercase animate-fade-in mb-4"> {t("hero.stack")}</span>
+            <h2 className="text-5xl text-secondary-foreground font-bold mb-6 text-center">{t("hero.technologies")} 
+              <span className="text-white font-serif italic font-normal"> {t("hero.stacksec")}</span>
             </h2>
           </div>
           <div className="relative overflow-hidden">
