@@ -36,5 +36,61 @@
         "description": "Estruturando componentes reutilizáveis para manter os projetos escaláveis e organizados."
       }
     }
+  },
+
+   "experience": {
+    "label": "Experiência",
+    "title": "Minhas",
+    "titleAccent": "Experiências",
+    "items": {
+      "itSupport": {
+        "company": "Controladoria Geral do Estado de Minas Gerais",
+        "position": "Estagiário de Suporte em TI",
+        "date": "10/04/2025 - 10/04/2026",
+        "description": "Atuação no suporte técnico a usuários internos, auxiliando na resolução de problemas relacionados a sistemas, equipamentos e infraestrutura de TI. Apoio na manutenção de sistemas e acompanhamento de demandas técnicas do setor."
+      },
+      "softwareDev": {
+        "company": "Controladoria Geral do Estado de Minas Gerais",
+        "position": "Estagiário de Desenvolvimento de Software",
+        "date": "10/04/2026 - Atualmente",
+        "description": "Participação no desenvolvimento e manutenção de sistemas internos, colaborando com a equipe na implementação de funcionalidades, correção de bugs e melhoria de aplicações utilizadas pela instituição."
+      }
+    }
+  },
+
+  "projects": {
+    "label": "Meus Projetos",
+    "title": "Seja",
+    "titleAccent": "diferente",
+    "status": "Em andamento",
+    "items": {
+      "barberFlow": {
+        "title": "Barber Flow",
+        "description": "O Barber Flow é uma solução completa para o controle financeiro e operacional do seu estabelecimento. Com ele, você acompanha de forma detalhada o faturamento diário, semanal e mensal, além de visualizar os ganhos individuais de cada barbeiro. O software permite diferenciar cortes pagos avulsamente daqueles realizados por clientes que aderiram ao plano de mensalidade, garantindo uma visão clara sobre a lucratividade de cada modalidade."
+      },
+      "spotifyClone": {
+        "title": "Spotify Clone",
+        "description": "Meu primeiro projeto usando React. Um projeto frontend focado em recriar o layout do Spotify, armazenando as informações da aplicação no localStorage."
+      },
+      "taskifyNode": {
+        "title": "Taskify Node",
+        "description": "API de gerenciamento de tarefas desenvolvida em Node.js, aplicando conceitos fundamentais como criação de servidor HTTP, manipulação de rotas, leitura e escrita de arquivos, além do tratamento de requisições e respostas."
+      },
+      "workoutTracker": {
+        "title": "Workout Tracker",
+        "description": "Aplicação fullstack CRUD para treinos, com manipulação de data e hora. O projeto permite que os usuários criem seus próprios planos de treino, organizem exercícios personalizados, acompanhem o que já foi feito e o que ainda falta, além de adicionarem observações sobre como cada exercício foi executado e possíveis ajustes para o futuro."
+      }
+    }
+  },
+
+  "contact": {
+    "label": "Fale Comigo",
+    "title": "Formas de ",
+    "titleAccent": "entrar em contato",
+    "p": "Tem algo para conversar comigo? Um projeto, uma ideia ou uma nova oportunidade? Fique à vontade para entrar em contato.",
+    "button": {
+      "send": "enviar",
+      "sending": "enviando..."
+    }
   }
 }

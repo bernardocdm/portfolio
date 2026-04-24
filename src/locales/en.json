@@ -36,6 +36,64 @@
         "description": "Structuring reusable components that keep projects scalable and organized."
       }
     }
+  },
+
+  "experience": {
+    "label": "Experience",
+    "title": "My",
+    "titleAccent": "Experiences",
+    "items": {
+      "itSupport": {
+        "company": "Office of the State Comptroller General of Minas Gerais",
+        "position": "IT Support Intern",
+        "date": "04/10/2025 - 04/10/2026",
+        "description": "Provided technical support to internal users, helping resolve issues related to systems, equipment, and IT infrastructure. Assisted with system maintenance and followed up on technical demands within the department."
+      },
+      "softwareDev": {
+        "company": "Office of the State Comptroller General of Minas Gerais",
+        "position": "Software Developer Intern",
+        "date": "04/10/2026 - Present",
+        "description": "Participated in the development and maintenance of internal systems, collaborating with the team on feature implementation, bug fixes, and improvements to applications used by the institution."
+      }
+    }
+  },
+
+  
+  "projects": {
+    "label": "My Projects",
+    "title": "Be",
+    "titleAccent": "different",
+    "status": "In progress",
+    "items": {
+      "barberFlow": {
+        "title": "Barber Flow",
+        "description": "Barber Flow is a complete solution for the financial and operational management of your barbershop. It allows you to track daily, weekly, and monthly revenue in detail, as well as monitor each barber's individual earnings. The software also distinguishes between one-time paid haircuts and services provided to clients subscribed to a monthly plan, giving a clear view of the profitability of each model."
+      },
+      "spotifyClone": {
+        "title": "Spotify Clone",
+        "description": "My first project using React. A frontend project focused on recreating the Spotify layout, with application data stored in localStorage."
+      },
+      "taskifyNode": {
+        "title": "Taskify Node",
+        "description": "A task management API built with Node.js, applying core concepts such as HTTP server creation, route handling, file reading and writing, and request and response processing."
+      },
+      "workoutTracker": {
+        "title": "Workout Tracker",
+        "description": "A fullstack CRUD application for workout sessions with date and time handling. It allows users to create their own workout plans, organize custom exercises, track completed and pending activities, and add notes about how each exercise felt or what they want to adjust in the future."
+      }
+    }
+  },
+
+  
+  "contact": {
+    "label": "Reach Me Out",
+    "title": "Ways to get ",
+    "titleAccent": "in touch with me",
+    "p":"Something to discuss with me? A project, an idea, or a new opportunity? Feel free to contact me",
+    "button": {
+      "send":"send",
+      "sending": "sending..."
+    }
   }
 }
 

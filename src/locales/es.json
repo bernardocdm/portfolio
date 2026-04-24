@@ -36,5 +36,62 @@
         "description": "Estructurando componentes reutilizables para mantener los proyectos escalables y organizados."
       }
     }
+  },
+
+   "experience": {
+    "label": "Experiencia",
+    "title": "Mis",
+    "titleAccent": "Experiencias",
+    "items": {
+      "itSupport": {
+        "company": "Contraloría General del Estado de Minas Gerais",
+        "position": "Practicante de Soporte de TI",
+        "date": "10/04/2025 - 10/04/2026",
+        "description": "Actuación en soporte técnico a usuarios internos, ayudando en la resolución de problemas relacionados con sistemas, equipos e infraestructura de TI. Apoyo en el mantenimiento de sistemas y seguimiento de las demandas técnicas del área."
+      },
+      "softwareDev": {
+        "company": "Contraloría General del Estado de Minas Gerais",
+        "position": "Practicante de Desarrollo de Software",
+        "date": "10/04/2026 - Actualidad",
+        "description": "Participación en el desarrollo y mantenimiento de sistemas internos, colaborando con el equipo en la implementación de funcionalidades, corrección de errores y mejora de aplicaciones utilizadas por la institución."
+      }
+    }
+  },
+
+  "projects": {
+    "label": "Mis Proyectos",
+    "title": "Sé",
+    "titleAccent": "diferente",
+    "status": "En progreso",
+    "items": {
+      "barberFlow": {
+        "title": "Barber Flow",
+        "description": "Barber Flow es una solución completa para la gestión financiera y operativa de tu barbería. Permite acompañar de forma detallada la facturación diaria, semanal y mensual, además de visualizar las ganancias individuales de cada barbero. El software también diferencia los cortes pagados de forma individual de los realizados por clientes suscritos a un plan mensual, ofreciendo una visión clara de la rentabilidad de cada modalidad."
+      },
+      "spotifyClone": {
+        "title": "Spotify Clone",
+        "description": "Mi primer proyecto usando React. Un proyecto frontend enfocado en recrear el diseño de Spotify, almacenando la información de la aplicación en localStorage."
+      },
+      "taskifyNode": {
+        "title": "Taskify Node",
+        "description": "API de gestión de tareas desarrollada con Node.js, aplicando conceptos fundamentales como creación de servidor HTTP, manejo de rutas, lectura y escritura de archivos, y tratamiento de solicitudes y respuestas."
+      },
+      "workoutTracker": {
+        "title": "Workout Tracker",
+        "description": "Aplicación fullstack CRUD para sesiones de entrenamiento, con manipulación de fecha y hora. Permite a los usuarios crear sus propios planes de entrenamiento, organizar ejercicios personalizados, seguir las actividades completadas y pendientes, y añadir notas sobre cómo se sintió cada ejercicio o qué les gustaría ajustar en el futuro."
+      }
+    }
+  },
+
+  "contact": {
+    "label": "Contáctame",
+    "title": "Formas de ",
+    "titleAccent": "ponerte en contacto conmigo",
+    "p": "¿Hay algo que quieras hablar conmigo? ¿Un proyecto, una idea o una nueva oportunidad? No dudes en ponerte en contacto.",
+    "button": {
+      "send": "enviar",
+      "sending": "enviando..."
+    }
   }
+
 }

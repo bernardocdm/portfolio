@@ -2,6 +2,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle, AlertCircle } from "lucide-reac
 import { Button } from "../components/Button";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useTranslation } from "react-i18next";
 
 const contactInfo = [
   {
@@ -82,13 +83,15 @@ export default function Contact() {
     }
   };
 
+  const { t } = useTranslation();
+
   return (
     <section id="contact">
       <div className="container mx-auto px-6 relative z-10 ">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-white text-sm font-medium tracking-wider uppercase animate-fade-in">Reach me out</span>
-          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">Ways to get <span className="font-serif italic font-normal text-white">in touch with me </span></h2>
-          <p>Something to discuss with me? A project, an idea, or a new opportunity? Feel free to contact me</p>
+          <span className="text-white text-sm font-medium tracking-wider uppercase animate-fade-in"> {t("contact.label")} </span>
+          <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">{t("contact.title")} <span className="font-serif italic font-normal text-white">{t("contact.titleAccent")} </span></h2>
+          <p>{t("contact.p")}</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
@@ -159,10 +162,10 @@ export default function Contact() {
                   disbled={isLoading}
                 >
                   {isLoading ? (
-                    <>Sending...</>
+                    <>{t("contact.button.sending")}</>
                   ) : (
                     <>
-                      Send Message 
+                      {t("contact.button.send")}
                       <Send className="w-5 h-5"/>
                     </>
                   )}
