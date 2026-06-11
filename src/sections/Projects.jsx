@@ -4,35 +4,31 @@ import { useTranslation } from "react-i18next";
 
 const projects = [
   {
+    title:"Lumap",
+    description:"projects.items.spotifyClone.description",
+    // image:"",
+    tags:["React", "Typescript","Tailwind","Node.js", "Nest.js","Postgres", "Docker"],
+    github:"#",
+  },
+  {
     title:"Barber Flow",
     description:"projects.items.barberFlow.description",
     image:"/projects/barberflow.png",
     tags:["PHP","Laravel", "Blade", "Tailwind", "Livewire"],
-    link:"#",
-    github:"#",
+    github:"https://github.com/bernardocdm/BarberFlow",
   },
   {
     title:"Drive Hub",
     description:"projects.items.driveHub.description",
     image:"/projects/drivehub.jpeg",
-    tags:["React", "Typescript", "CSS"],
-    link:"#",
-    github:"#",
+    tags:["React", "Tailwind", "Springboot"],
+    github:"https://github.com/bernardocdm/sistema-aluguel-de-carros",
   },
   {
-    title:"Spotify Clone",
-    description:"projects.items.spotifyClone.description",
-    // image:"",
-    tags:["Node.js", "Express"],
-    link:"#",
-    github:"#",
-  },
-  {
-    title:"Workout Tracker",
+    title:"Sist Moeda Estudantil",
     description:"projects.items.workoutTracker.description",
     // image:"",
-    tags:["NodeJS", "ReactJS", "Express", "Tailwind"],
-    link:"#",
+    tags:["React", "Springboot", "Tailwind","Postgres" ,"Docker"],
     github:"#",
   },
 ];

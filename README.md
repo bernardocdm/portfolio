@@ -1,16 +1,108 @@
-# React + Vite
+# 👨‍💻 Bernardo Carvalho Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio built with **React**, **Vite**, and **Tailwind CSS** to showcase my background, professional experience, technical skills, and selected software projects.
 
-Currently, two official plugins are available:
+🌐 **Live Demo:** https://portfolio-bernardocarvalho.vercel.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌍 Multilingual support (Portuguese, English, and Spanish)
+- 📱 Fully responsive interface
+- 👨‍💻 About me and professional experience sections
+- 🚀 Featured projects showcase
+- 📄 Downloadable CV
+- 📧 Contact form powered by EmailJS
+- 🔗 Social and professional links integration
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📂 Featured Projects
+
+| Project | Description |
+| :------ | :---------- |
+| **Barber Flow** | Financial and operational management system for barbershops. |
+| **Drive Hub** | Responsive React and TypeScript frontend for vehicle-related information. |
+| **Spotify Clone** | React application recreating the Spotify interface using localStorage. |
+| **Workout Tracker** | Fullstack CRUD application for managing workout plans, exercises, notes, and progress. |
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+
+### Libraries & Tools
+- i18next / react-i18next
+- React Hook Form
+- EmailJS
+- Lucide React
+- React Icons
+
+### Deployment
+- Vercel
+
+---
+
+## 🚀 Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/bernardocdm/portfolio-profissional.git
+cd portfolio-profissional
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+Run lint checks:
+
+```bash
+npm run lint
+```
+
+---
+
+## ⚙️ Environment Variables
+
+The contact form integration uses **EmailJS**. Create a `.env` file in the project root and configure the following variables:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+---
+
+## 📄 License
+
+This project is available for study and inspiration. Feel free to explore the code and adapt ideas for your own portfolio.
+

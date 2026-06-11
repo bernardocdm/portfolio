@@ -22,7 +22,7 @@ export const Navbar = () => {
                     Bernardo Carvalho<span className="text-primary"></span>
                 </a>
 
-                <div className="flex items-center gap-1">
+                <div className="hidden md:flex items-center gap-1">
                     <div className="glass rounded-full px-2 py-1 flex items-center gap-5">
                         {navLinks.map((link, index) => (
                             <a 
@@ -67,17 +67,21 @@ export const Navbar = () => {
                 <div className="md:hidden glass">
                     <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
                             {navLinks.map((link, index) => (
-                                <a 
-                                href={link.href} 
-                                key={index} 
-                                className="text-lg text-muted-foreground hover:text-foreground "
+                                <a
+                                href={link.href}
+                                key={index}
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="text-lg text-muted-foreground hover:text-foreground"
                                 >
                                 {link.label}</a>
                         ))}
 
-                        <Button onClick={() => setIsMobileMenuOpen(false)}>
-                            Contact me
-                        </Button>
+                        <div className="pt-2 border-t border-border flex items-center justify-between">
+                            <LanguageSwitcher />
+                            <Button onClick={() => setIsMobileMenuOpen(false)}>
+                                Contact me
+                            </Button>
+                        </div>
                     </div>
                 </div>
                 )}
