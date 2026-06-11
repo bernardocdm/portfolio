@@ -139,15 +139,34 @@ export default function Hero() {
             </h2>
           </div>
           <div className="relative overflow-hidden">
-            <div className="flex animate-marquee">
+            {/* desktop maarquee */}
+            <div className="hidden md:flex animate-marquee">
               {[...skills, ...skills].map((skill, idx) => {
                 const Icon = skill.icon;
                 return (
                   <div 
                     key={idx} 
-                    className="shrink-0 px-12 py-12 hover:text-primary inline-flex flex-col items-center gap-2 transition-all duration-300 ease-in-out hover:scale-110">
+                    className="shrink-0 px-12 py-12 hover:text-primary inline-flex flex-col items-center gap-2 transition-all duration-300 ease-in-out hover:scale-110"
+                  >
                     <Icon className="text-5xl" />
                     <span className="text-sm ">{skill.name}</span>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Mobile marquee */}
+            <div className="flex md:hidden animate-marquee-mobile">
+              {[...skills, ...skills].map((skill, idx) => {
+                const Icon = skill.icon;
+
+                return (
+                  <div
+                    key={idx}
+                    className="inline-flex shrink-0 flex-col items-center gap-2 px-6 py-8 text-center transition-colors active:text-primary"
+                  >
+                    <Icon className="text-4xl" />
+                    <span className="text-xs leading-tight">{skill.name}</span>
                   </div>
                 );
               })}

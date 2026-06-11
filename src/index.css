@@ -107,6 +107,20 @@
         }
     }
 
+    @keyframes marquee-mobile {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-50%);
+        }
+    }
+
+    .animate-marquee-mobile {
+        animation: marquee-mobile 24s linear infinite;
+    }
+
 
     .animate-fade-in {
         animation: fade-in 0.8s ease-out both;
