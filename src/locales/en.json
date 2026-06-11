@@ -69,6 +69,10 @@
         "title": "Barber Flow",
         "description": "Barber Flow is a complete solution for the financial and operational management of your barbershop. It allows you to track daily, weekly, and monthly revenue in detail, as well as monitor each barber's individual earnings. The software also distinguishes between one-time paid haircuts and services provided to clients subscribed to a monthly plan, giving a clear view of the profitability of each model."
       },
+      "driveHub": {
+        "title": "Drive Hub",
+        "description": "A React and TypeScript frontend project for organizing and presenting vehicle-related information through a clean, responsive interface."
+      },
       "spotifyClone": {
         "title": "Spotify Clone",
         "description": "My first project using React. A frontend project focused on recreating the Spotify layout, with application data stored in localStorage."
@@ -94,6 +98,16 @@
       "send":"send",
       "sending": "sending..."
     }
+  },
+
+  "footer": {
+    "tagline": "Building scalable web applications with modern technologies.",
+    "nav": "Navigation",
+    "connect": "Connect",
+    "connectText": "Have a project or opportunity in mind? I'd love to hear from you.",
+    "cta": "Get in touch",
+    "rights": "All rights reserved.",
+    "backToTop": "Back to top"
   }
 }
 

@@ -5,6 +5,7 @@ import Projects from "@/sections/Projects";
 import Contact from "@/sections/Contact";
 import { Navbar } from "./layout/navbar";
 import GreenDots from "./components/GreenDots";
+import { Footer } from "./layout/footer"
 // import { useTranslation } from "react-i18next";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Contact />
         </div>
       </main>
+      <Footer/>
     </div>
   )
 }

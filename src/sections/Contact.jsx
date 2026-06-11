@@ -87,7 +87,7 @@ export default function Contact() {
 
   return (
     <section id="contact">
-      <div className="container mx-auto px-6 relative z-10 ">
+      <div className="container mx-auto px-6 relative z-10 mb-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-white text-sm font-medium tracking-wider uppercase animate-fade-in"> {t("contact.label")} </span>
           <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-secondary-foreground">{t("contact.title")} <span className="font-serif italic font-normal text-white">{t("contact.titleAccent")} </span></h2>
@@ -194,7 +194,7 @@ export default function Contact() {
           </div>
 
                {/* Contact Info */}
-            <div className="glass rounded-3xl flex items-center border border-primary/30 justify-center  animate-fade-in animation-delay-400">
+            <div className="glass rounded-3xl flex items-center border border-primary/30 justify-center  animate-fade-in animation-delay-400  mb-1">
               <div className="space-y-8 w-full">
                 {contactInfo.map((item, i) => (
                   <a

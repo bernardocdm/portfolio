@@ -68,6 +68,10 @@
         "title": "Barber Flow",
         "description": "O Barber Flow é uma solução completa para o controle financeiro e operacional do seu estabelecimento. Com ele, você acompanha de forma detalhada o faturamento diário, semanal e mensal, além de visualizar os ganhos individuais de cada barbeiro. O software permite diferenciar cortes pagos avulsamente daqueles realizados por clientes que aderiram ao plano de mensalidade, garantindo uma visão clara sobre a lucratividade de cada modalidade."
       },
+      "driveHub": {
+        "title": "Drive Hub",
+        "description": "Projeto frontend em React e TypeScript para organizar e apresentar informações relacionadas a veículos em uma interface limpa e responsiva."
+      },
       "spotifyClone": {
         "title": "Spotify Clone",
         "description": "Meu primeiro projeto usando React. Um projeto frontend focado em recriar o layout do Spotify, armazenando as informações da aplicação no localStorage."
