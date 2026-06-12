@@ -102,9 +102,9 @@ export default function Hero() {
             </div>
           </div>
           {/* RIGHT COLUMN - PROFILE IMAGE  */}
-          <div className="relative animation-delay-300">
+          <div className="relative animation-delay-300 order-first lg:order-last">
           {/* PROFILE IMAGE  */}
-            <div className="relative mx-auto">
+            <div className="relative mx-auto w-52 sm:w-72 lg:w-full">
               <div
                 className="absolute inset-0 
               rounded-full bg-linear-to-br 
@@ -119,7 +119,7 @@ export default function Hero() {
                   />
 
                 {/* FLOATING BADGE  */}
-                <div className="absolute bottom-[10%] right-0 glass rounded-xl px-4 py-2">
+                <div className="absolute bottom-[10%] right-0 glass rounded-xl px-4 py-2 hidden sm:block">
                   <div className="flex items-center gap-3">
                     < div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/> 
                     <span className="text-sm font-medium">{t("hero.work")}</span>
@@ -129,7 +129,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-
         {/* SKILLS SECTION  */}
         <div className="mt-20 animate-fade-in animation-delay-600">
           <div className="flex flex-col items-center">

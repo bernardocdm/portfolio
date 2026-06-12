@@ -95,8 +95,20 @@
     "titleAccent": "in touch with me",
     "p":"Something to discuss with me? A project, an idea, or a new opportunity? Feel free to contact me",
     "button": {
-      "send":"send",
+      "send": "send",
       "sending": "sending..."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Name...",
+      "email": "Email",
+      "emailPlaceholder": "Email...",
+      "message": "Message",
+      "messagePlaceholder": "Your message..."
+    },
+    "status": {
+      "success": "Message sent successfully, on my way!",
+      "error": "Failed to send message"
     }
   },
 

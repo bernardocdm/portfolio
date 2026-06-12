@@ -48,7 +48,6 @@ export default function Contact() {
       const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
       const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-
       if(!serviceId || !templateId || !publicKey) {
         throw new Error("Emailjs configuration missing");
       }
@@ -65,8 +64,8 @@ export default function Contact() {
       );
 
         setSubmitStatus({
-          type: "sucess",
-          message: "Message sent succesfuly, on my way!",
+          type: "success",
+          message: t("contact.status.success"),
         });
         setFormData({ name: "", email: "", message: "" });
 
@@ -74,12 +73,11 @@ export default function Contact() {
         console.error("Emailjs error" , err);
         setSubmitStatus({
           type: "error",
-          message:
-            err.text || "Failed to send message",
+          message: err.text || t("contact.status.error"),
         });
 
     } finally {
-        setIsloading(true);
+        setIsloading(false);
     }
   };
 
@@ -97,18 +95,18 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12 items-stretch">
           <div className="h-full animate-fade-in animation-delay-400 *:">
             <div className="glass p-8 rounded-3xl border border-primary/30 animate-fade-in animation-dalay-300">
-              <form onSubmit={handleSubmit} action="space-y- "> 
+              <form onSubmit={handleSubmit} className="space-y-4"> 
                 <div>
-                  <label 
+                  <label
                     htmlFor="name"
                     className="mb-2 block text-sm font-medium"
                   >
-                    Name
+                    {t("contact.form.name")}
                   </label>
-                  <input 
+                  <input
                     id="name"
                     type="text"
-                    placeholder="Name..."
+                    placeholder={t("contact.form.namePlaceholder")}
                     required
                     value={formData.name}
                     onChange={(e) => 
@@ -118,15 +116,16 @@ export default function Contact() {
                   />
                 </div>
                 <div className="">
-                  <label 
+                  <label
                     htmlFor="email"
                     className="mb-2 block text-sm font-medium"
                   >
-                      Email
+                    {t("contact.form.email")}
                   </label>
-                  <input 
-                    type="text"
-                    placeholder="Email..."
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder={t("contact.form.emailPlaceholder")}
                     required
                     value={formData.email}
                     onChange={(e) =>
@@ -140,26 +139,27 @@ export default function Contact() {
                     htmlFor="message"
                     className="mb-2 block text-sm font-medium"
                   >
-                    Message
+                    {t("contact.form.message")}
                   </label>
                   <textarea
                     rows={5}
                     type="text"
-                    placeholder="Your message..."
+                    placeholder={t("contact.form.messagePlaceholder")}
                     required
                     value={formData.message}
                     onChange={(e) =>
                       setFormData({ ...formData, message: e.target.value })
                     }
-                    className="w-full mb-2 px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all resize-none"
+                    className="w-full mb-2 px-4 py-3 bg-surface rounded-xl border border-border focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" 
                   />
+                  
                 </div>
 
                 <Button 
                   className="w-full" 
                   size="lg"
                   type="submit"
-                  disbled={isLoading}
+                  disabled={isLoading}
                 >
                   {isLoading ? (
                     <>{t("contact.button.sending")}</>
@@ -172,13 +172,13 @@ export default function Contact() {
                 </Button>
 
                 {submitStatus.type && (
-                  <div className={`flex items-center gap-3 p-4 rounded-full ${
-                    submitStatus.type === "sucess"
-                      ? "bg-green-500/10 border border-green-500/20 text-gray-400"
+                  <div className={`flex items-center gap-3 p-4 mt-4 rounded-full ${
+                    submitStatus.type === "success"
+                      ? "bg-green-500/10 border border-green-500/20 text-green-400"
                       : "bg-red-500/10 border border-red-500/20 text-red-400"
                   } `}
                   >
-                    {submitStatus.type === "sucess" ? (
+                    {submitStatus.type === "success" ? (
                       <CheckCircle className="w-5 h-5 shrink-0" />
                     ) : (
                       <AlertCircle className="w-5 h-5 shrink-0"/>

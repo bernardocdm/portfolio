@@ -95,6 +95,18 @@
     "button": {
       "send": "enviar",
       "sending": "enviando..."
+    },
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Nombre...",
+      "email": "Correo",
+      "emailPlaceholder": "Correo...",
+      "message": "Mensaje",
+      "messagePlaceholder": "Tu mensaje..."
+    },
+    "status": {
+      "success": "¡Mensaje enviado con éxito, en camino!",
+      "error": "Error al enviar el mensaje"
     }
   }
 
