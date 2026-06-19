@@ -14,6 +14,10 @@ const navLinks = [
 export const Navbar = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const { t } = useTranslation();
+    const phone = "5531999839934"
+    const message = encodeURIComponent(
+        t("whatsapp.message")
+    );
 
     return (
         <header
@@ -43,7 +47,9 @@ export const Navbar = () => {
 
                     <div className="hidden md:block">
                         <a
-                            href="#contact"
+                            href={`https://wa.me/${phone}?text=${message}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="relative overflow-hidden rounded-full font-medium px-4 py-2 text-sm bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg shadow-primary/25 flex items-center gap-2"
                         >
                             {t("navbar.cta")}

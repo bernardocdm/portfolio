@@ -115,6 +115,9 @@
     "status": {
       "success": "¡Mensaje enviado con éxito, en camino!",
       "error": "Error al enviar el mensaje"
+    },
+    "whatsapp": {
+      "message": "Hola! Vi tu portafolio y me gustaría hablar contigo."
     }
   }
 
