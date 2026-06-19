@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import { ArrowUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
@@ -12,11 +12,15 @@ const navLinks = [
 const socialLinks = [
   { icon: FaGithub, href: "https://github.com/bernardocdm", label: "GitHub" },
   { icon: FaLinkedin, href: "https://linkedin.com/in/bernardocdm", label: "LinkedIn" },
+  { icon: FaInstagram, href: "https://www.instagram.com/bernardo_cdm/", label: "Instagram" },
 ];
 
 export const Footer = () => {
   const currentYear = new Date().getFullYear();
   const { t } = useTranslation();
+  const email = "bernardocdm.dev@proton.me";
+  const subject = encodeURIComponent(t("email.subject"));
+  const body = encodeURIComponent(t("email.body"));
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -26,7 +30,7 @@ export const Footer = () => {
     <footer className="border-t border-border mt-16">
       <div className="container mx-auto px-6 py-12">
 
-        {/* Back to top — top right */}
+        {/* Back to top */}
         <div className="flex justify-end mb-10">
           <button
             onClick={scrollToTop}
@@ -40,16 +44,15 @@ export const Footer = () => {
           </button>
         </div>
 
-        {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
           {/* Brand + socials */}
           <div className="flex flex-col gap-4">
             <a
-              href="#hero"
+              href={`mailto:${email}?subject=${subject}&body=${body}`}
               className="font-bold text-lg tracking-tight text-foreground hover:text-primary transition-colors"
             >
-              bernardocdm.dev@proton.me
+              {email}
             </a>
 
             <div className="flex items-center gap-3 mt-4">
@@ -104,7 +107,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom bar — copyright centered */}
+        {/* copyright */}
         <div className="mt-12 pt-6 border-t border-border flex justify-center">
           <p className="text-xs text-muted-foreground text-center">
             © {currentYear} Bernardo Carvalho. {t("footer.rights")}

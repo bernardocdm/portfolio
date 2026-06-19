@@ -116,17 +116,21 @@
     "status": {
       "success": "¡Mensaje enviado!",
       "error": "Error al enviar el mensaje"
-    },
-    "whatsapp": {
-      "message": "Hola! Vi tu portafolio y me gustaría hablar contigo."
     }
+  },
+  "whatsapp": {
+    "message": "Hola! Vi tu portafolio y me gustaría hablar contigo."
+    },
+  "email": {
+    "subject": "Contacto desde el portafolio",
+    "body": "Hola Bernardo, vi tu portafolio y me gustaría hablar contigo."
   },
 
   "footer": {
-    "tagline": "Construyendo aplicaciones web escalables con tecnologías modernas.",
+    "tagline": "Interfaces modernas, código sólido y foco en la experiencia.",
     "nav": "Navegación",
-    "connect": "Trabajemos juntos",
-    "connectText": "¿Tienes un proyecto u oportunidad en mente? Me encantaría escucharte.",
+    "connect": "Contacto",
+    "connectText": "¿Quieres hablar sobre un proyecto o una oportunidad?",
     "cta": "Ponerse en contacto",
     "rights": "Todos los derechos reservados.",
     "backToTop": "Volver arriba"

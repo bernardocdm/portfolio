@@ -122,16 +122,20 @@
   },
 
   "footer": {
-    "tagline": "Building scalable web applications with modern technologies.",
+    "tagline": "Modern interfaces, solid code, and a focus on experience.",
     "nav": "Navigation",
-    "connect": "Let's work together",
-    "connectText": "Have a project or opportunity in mind? I'd love to hear from you.",
+    "connect": "Contact",
+    "connectText": "Want to talk about a project or opportunity? ",
     "cta": "Get in touch",
     "rights": "All rights reserved.",
     "backToTop": "Back to top"
   },
   "whatsapp": {
     "message": "Hi! I saw your portfolio and would like to talk with you."
-  }
+  },
+  "email": {
+  "subject": "Portfolio contact",
+  "body": "Hi Bernardo, I saw your portfolio and would like to talk with you."
+}
 }
 

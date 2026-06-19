@@ -50,10 +50,8 @@ export default function Hero() {
         <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background"></div>
       </div>
 
-
-
-      {/* Location badge — just below navbar, left-aligned */}
-      <div className="absolute hidden md:flex justify-end top-20 right-0 z-20">
+      {/* Location badge */}
+      <div className="absolute hidden md:flex justify-end top-20 right-20 z-20">
         <div className="container mx-auto px-6">
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs text-muted-foreground border border-border bg-surface/50 animate-fade-in">
             <MapPin className="w-3 h-3 text-primary" />

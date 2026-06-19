@@ -34,8 +34,8 @@ export const Navbar = () => {
                                 href={link.href}
                                 key={index}
                                 className="px-4 py-2 text-sm text-muted-foreground hover:text-foreground rounded-full hover:bg-surface"
-                                >
-                                    {t(link.labelKey)}</a>
+                            >
+                                {t(link.labelKey)}</a>
                         ))}
                     </div>
                 </div>
