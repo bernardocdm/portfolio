@@ -25,6 +25,22 @@ export const Footer = () => {
   return (
     <footer className="border-t border-border mt-16">
       <div className="container mx-auto px-6 py-12">
+
+        {/* Back to top — top right */}
+        <div className="flex justify-end mb-10">
+          <button
+            onClick={scrollToTop}
+            aria-label={t("footer.backToTop")}
+            className="flex items-center gap-2 text-xs text-muted-foreground hover:text-primary transition-colors group"
+          >
+            {t("footer.backToTop")}
+            <span className="w-7 h-7 rounded-full border border-border flex items-center justify-center group-hover:border-primary group-hover:bg-primary/10 transition-all">
+              <ArrowUp size={13} />
+            </span>
+          </button>
+        </div>
+
+        {/* Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
 
           {/* Brand + socials */}
@@ -33,12 +49,10 @@ export const Footer = () => {
               href="#hero"
               className="font-bold text-lg tracking-tight text-foreground hover:text-primary transition-colors"
             >
-              Bernardo Carvalho
+              bernardocdm.dev@proton.me
             </a>
-            <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-              {t("footer.tagline")}
-            </p>
-            <div className="flex items-center gap-3 mt-1">
+
+            <div className="flex items-center gap-3 mt-4">
               {socialLinks.map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
@@ -90,22 +104,13 @@ export const Footer = () => {
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-muted-foreground">
+        {/* Bottom bar — copyright centered */}
+        <div className="mt-12 pt-6 border-t border-border flex justify-center">
+          <p className="text-xs text-muted-foreground text-center">
             © {currentYear} Bernardo Carvalho. {t("footer.rights")}
           </p>
-          <button
-            onClick={scrollToTop}
-            aria-label={t("footer.backToTop")}
-            className="flex items-center gap-2 text-xs text-muted-foreground hover:text-primary transition-colors group"
-          >
-            {t("footer.backToTop")}
-            <span className="w-7 h-7 rounded-full border border-border flex items-center justify-center group-hover:border-primary group-hover:bg-primary/10 transition-all">
-              <ArrowUp size={13} />
-            </span>
-          </button>
         </div>
+
       </div>
     </footer>
   );

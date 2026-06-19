@@ -35,11 +35,9 @@ export const About = () => {
   const { t } = useTranslation();
   return (
     <section id="about" className="py-32 relative overflow-hidden">
-      <div className="container mx-auto px-6 relativo z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* LEFT  */}
-          <div className="space-y-8">
-            <div className="animate-fade-in">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="flex flex-col items-center mb-10 animate-fade-in">
+          <div className="animate-fade-in">
               <span className=" font-medium tracking-wider uppercase">{t("about.label")}</span>
             </div>
 
@@ -48,11 +46,13 @@ export const About = () => {
               <span className="font-serif italic font-normal text-white">{" " }
               {t("about.titleAccent")}</span>
             </h2>
+        </div>
 
-            <div className="space-y-4 text-muted-foreground animate-fade-in">
-              <p>{t("about.paragraph1")}</p>
-              <p>{t("about.paragraph2")}</p>
-            </div>
+        <div className="grid lg:grid-cols-2 gap-10 items-center">
+          {/* LEFT  */}
+          <div className="space-y-4 mb-10 text-muted-foreground animate-fade-in">
+            <p>{t("about.paragraph1")}</p>
+            <p>{t("about.paragraph2")}</p>
           </div>
 
           {/* RIGHT  */}

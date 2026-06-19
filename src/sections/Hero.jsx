@@ -3,6 +3,7 @@ import {
   ArrowRight,
   ChevronDown,
   Download,
+  MapPin,
 } from "lucide-react";
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import DownloadCV from "../components/DownloadCV";
@@ -51,6 +52,16 @@ export default function Hero() {
 
 
 
+      {/* Location badge — just below navbar, left-aligned */}
+      <div className="absolute hidden md:flex justify-end top-20 right-0 z-20">
+        <div className="container mx-auto px-6">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs text-muted-foreground border border-border bg-surface/50 animate-fade-in">
+            <MapPin className="w-3 h-3 text-primary" />
+            Belo Horizonte, MG · Brazil
+          </span>
+        </div>
+      </div>
+
       {/* CONTENT */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -74,15 +85,11 @@ export default function Hero() {
 
             {/* BUTTONS REACH ME  */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                {t("hero.contact")}
-              </Button>
-
               <DownloadCV />
             </div>
 
             {/* SOCIAL LINKS */}
-            <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
+            <div className="flex items-center gap-2 animate-fade-in animation-delay-400">
               <span className="text-xl text-muted-foreground">{t("hero.reach")}</span>
               {[
                 { icon: FaGithub, href: "https://github.com/bernardocdm" },

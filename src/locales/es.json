@@ -1,6 +1,6 @@
 {
   "hero": {
-    "first": "INGENIERO DE SOFTWARE - DESARROLLADOR FULLSTACK ACTUALMENTE APRENDIENDO REACT + NODE JS",
+    "first": "INGENIERO DE SOFTWARE - DESARROLLADOR FULLSTACK ",
     "titleStart": "Desarrollador",
     "developer": "de software",
     "introduce": "Hola, soy Bernardo Carvalho, un ingeniero de software especializado en React, Nest.js y TypeScript. Desarrollo aplicaciones web escalables y de alto rendimiento que a los usuarios les encantan.",
@@ -114,12 +114,21 @@
       "messagePlaceholder": "Tu mensaje..."
     },
     "status": {
-      "success": "¡Mensaje enviado con éxito, en camino!",
+      "success": "¡Mensaje enviado!",
       "error": "Error al enviar el mensaje"
     },
     "whatsapp": {
       "message": "Hola! Vi tu portafolio y me gustaría hablar contigo."
     }
-  }
+  },
 
+  "footer": {
+    "tagline": "Construyendo aplicaciones web escalables con tecnologías modernas.",
+    "nav": "Navegación",
+    "connect": "Trabajemos juntos",
+    "connectText": "¿Tienes un proyecto u oportunidad en mente? Me encantaría escucharte.",
+    "cta": "Ponerse en contacto",
+    "rights": "Todos los derechos reservados.",
+    "backToTop": "Volver arriba"
+  }
 }
