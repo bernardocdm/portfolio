@@ -1,98 +1,65 @@
 # 👨‍💻 Bernardo Carvalho Portfolio
 
-A personal portfolio built with **React**, **Vite**, and **Tailwind CSS** to showcase my background, professional experience, technical skills, and selected software projects.
+Personal portfolio built with **React**, **Vite**, and **Tailwind CSS** to showcase my background, professional experience, technical skills, and selected software projects.
 
-🌐 **Live Demo:** https://portfolio-bernardocarvalho.vercel.app
-
+🌐  **Live Demo:** https://portfolio-bernardocarvalho.vercel.app (not yet) 
 ---
 
-## ✨ Features
+## Features
 
-- 🌍 Multilingual support (Portuguese, English, and Spanish)
+- 🌍 Multilingual support — Portuguese, English, and Spanish (auto-detected from browser)
 - 📱 Fully responsive interface
 - 👨‍💻 About me and professional experience sections
 - 🚀 Featured projects showcase
-- 📄 Downloadable CV
+- 📄 Language-aware CV download — serves the correct PDF based on the active language
 - 📧 Contact form powered by EmailJS
 - 🔗 Social and professional links integration
 
 ---
 
-## 📂 Featured Projects
+## Projects
 
-| Project | Description |
-| :------ | :---------- |
-| **Barber Flow** | Financial and operational management system for barbershops. |
-| **Drive Hub** | Responsive React and TypeScript frontend for vehicle-related information. |
-| **Spotify Clone** | React application recreating the Spotify interface using localStorage. |
-| **Workout Tracker** | Fullstack CRUD application for managing workout plans, exercises, notes, and progress. |
-
----
-
-## 🛠️ Tech Stack
-
-### Frontend
-- React
-- Vite
-- Tailwind CSS
-- JavaScript
-
-### Libraries & Tools
-- i18next / react-i18next
-- React Hook Form
-- EmailJS
-- Lucide React
-- React Icons
-
-### Deployment
-- Vercel
+| Project | Stack | Demo |
+| :------ | :---- | :--- |
+| **Lumap** | React, TypeScript, Tailwind, Node.js, Nest.js, PostgreSQL, Docker | — |
+| **Barber Flow** | PHP, Laravel, Blade, Tailwind, Livewire | [barberflowtecnol1.hospedagemdesites.ws](http://barberflowtecnol1.hospedagemdesites.ws/login) |
+| **Drive Hub** | React, Tailwind, Spring Boot | — |
+| **Sist. Moeda Estudantil** | React, Spring Boot, Tailwind, PostgreSQL, Docker | — |
 
 ---
 
-## 🚀 Getting Started
+##  Tech Stack
 
-Clone the repository:
+**Frontend:** React, Vite, Tailwind CSS v4, Typescript, JavaScript
+
+**Libraries:** i18next, react-i18next, EmailJS, Lucide React, React Icons
+
+**Deployment:** Vercel
+
+---
+
+## Getting Started
 
 ```bash
 git clone https://github.com/bernardocdm/portfolio-profissional.git
 cd portfolio-profissional
-```
-
-Install the dependencies:
-
-```bash
 npm install
-```
-
-Start the development server:
-
-```bash
 npm run dev
 ```
 
-Build for production:
+Other commands:
 
 ```bash
-npm run build
-```
-
-Preview the production build locally:
-
-```bash
-npm run preview
-```
-
-Run lint checks:
-
-```bash
-npm run lint
+npm run build    # production build
+npm run preview  # preview production build locally
+npm run lint     # run ESLint
 ```
 
 ---
 
-## ⚙️ Environment Variables
+## Environment Variables
 
-The contact form integration uses **EmailJS**. Create a `.env` file in the project root and configure the following variables:
+The contact form requires **EmailJS**. Create a `.env` file in the project root:
 
 ```env
 VITE_EMAILJS_SERVICE_ID=your_service_id
@@ -102,7 +69,18 @@ VITE_EMAILJS_PUBLIC_KEY=your_public_key
 
 ---
 
-## 📄 License
+## CV Files
 
-This project is available for study and inspiration. Feel free to explore the code and adapt ideas for your own portfolio.
+Place the CV PDFs in the `public/` directory. The download button serves the file matching the active language:
 
+```
+public/CV-pt.pdf
+public/CV-en.pdf
+public/CV-es.pdf
+```
+
+---
+
+## License
+
+Available for study and inspiration. Feel free to explore the code and adapt ideas for your own portfolio.
