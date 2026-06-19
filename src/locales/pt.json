@@ -87,6 +87,14 @@
     }
   },
 
+  "navbar": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "cta": "Fale comigo"
+  },
+
   "contact": {
     "label": "Fale Comigo",
     "title": "Formas de ",

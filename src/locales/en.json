@@ -112,6 +112,14 @@
     }
   },
 
+  "navbar": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cta": "Contact Me"
+  },
+
   "footer": {
     "tagline": "Building scalable web applications with modern technologies.",
     "nav": "Navigation",

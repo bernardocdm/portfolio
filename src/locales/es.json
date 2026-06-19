@@ -87,6 +87,14 @@
     }
   },
 
+  "navbar": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "cta": "Contáctame"
+  },
+
   "contact": {
     "label": "Contáctame",
     "title": "Formas de ",

@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
@@ -16,6 +16,7 @@ const projects = [
     image:"/projects/barberflow.png",
     tags:["PHP","Laravel", "Blade", "Tailwind", "Livewire"],
     github:"https://github.com/bernardocdm/BarberFlow",
+    demo: "http://barberflowtecnol1.hospedagemdesites.ws/login",
   },
   {
     title:"Drive Hub",
@@ -77,15 +78,28 @@ export default function Project() {
                   <p className="text-sm text-center text-white/85 leading-relaxed line-clamp-4">
                     {t(project.description)}
                   </p>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 hover:bg-primary/20 border border-white/20 hover:border-primary text-sm font-medium text-white hover:text-primary transition-all duration-200"
-                  >
-                    <FaGithub size={16} />
-                    View on GitHub
-                  </a>
+                  <div className="flex items-center gap-3">
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 hover:bg-primary/20 border border-white/20 hover:border-primary text-sm font-medium text-white hover:text-primary transition-all duration-200"
+                    >
+                      <FaGithub size={16} />
+                      GitHub
+                    </a>
+                    {project.demo && (
+                      <a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 px-5 py-2.5 rounded-full bg-primary/20 hover:bg-primary/40 border border-primary/50 hover:border-primary text-sm font-medium text-primary transition-all duration-200"
+                      >
+                        <ExternalLink size={16} />
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
 
