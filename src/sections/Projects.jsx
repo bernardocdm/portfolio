@@ -1,14 +1,16 @@
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { Button } from "../components/Button";
 
 const projects = [
   {
     title:"Lumap",
-    description:"projects.items.spotifyClone.description",
-    // image:"",
+    description:"projects.items.lumap.description",
+    image:"/projects/dashboard.png",
     tags:["React", "Typescript","Tailwind","Node.js", "Nest.js","Postgres", "Docker"],
-    github:"#",
+    github:"https://github.com/bernardocdm/lumap.git",
+    demo: "https://welcoming-trust-production-3b79.up.railway.app",
   },
   {
     title:"Barber Flow",
@@ -26,11 +28,11 @@ const projects = [
     github:"https://github.com/bernardocdm/sistema-aluguel-de-carros",
   },
   {
-    title:"Sist Moeda Estudantil",
-    description:"projects.items.workoutTracker.description",
-    // image:"",
-    tags:["React", "Springboot", "Tailwind","Postgres" ,"Docker"],
-    github:"#",
+    title:"Plane Graph Analysis",
+    description:"projects.items.planeGraphAnalysis.description",
+    image:"/projects/graph.png",
+    tags:["Python", "FastAPI", "Graph Theory", "PageRank", "NetworkX-free", "Gephi", "Sigma.js"],
+    github:"https://github.com/bernardocdm/plane-graph-analysis",
   },
 ];
 
@@ -130,6 +132,19 @@ export default function Project() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="flex items-center justify-center mt-10">
+          <a
+            href="https://github.com/bernardocdm?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="flex items-center gap-2">
+              <FaGithub size={16} />
+              {t("projects.viewMore")}
+            </Button>
+          </a>
         </div>
 
       </div>

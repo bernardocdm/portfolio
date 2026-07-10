@@ -15,8 +15,8 @@
 
   "about": {
     "label": "Sobre mí",
-    "title": "Construyendo",
-    "titleAccent": "el Futuro",
+    "title": "Quién",
+    "titleAccent": "soy yo",
     "paragraph1": "Soy un ingeniero de software apasionado con más de 5 años de experiencia creando productos digitales que marcan la diferencia. Mi camino comenzó con la curiosidad por entender cómo funcionan las cosas en la web y evolucionó hacia una sólida especialización en tecnologías modernas de frontend.",
     "paragraph2": "Cuando no estoy programando, probablemente me encontrarás explorando nuevas tecnologías, contribuyendo a proyectos de código abierto o compartiendo conocimiento con la comunidad de desarrolladores.",
     "capabilities": {
@@ -61,10 +61,15 @@
 
   "projects": {
     "label": "Mis Proyectos",
-    "title": "Sé",
-    "titleAccent": "diferente",
+    "title": "Lo que",
+    "titleAccent": "construí",
     "status": "En progreso",
+    "viewMore": "Ver más proyectos",
     "items": {
+      "lumap": {
+        "title": "Lumap",
+        "description": "Una plataforma web fullstack que optimiza las operaciones industriales, gestionando clientes, presupuestos, órdenes de trabajo, flujo de producción y procesos financieros con seguimiento en tiempo real."
+      },
       "barberFlow": {
         "title": "Barber Flow",
         "description": "Barber Flow es una solución completa para la gestión financiera y operativa de tu barbería. Permite acompañar de forma detallada la facturación diaria, semanal y mensual, además de visualizar las ganancias individuales de cada barbero. El software también diferencia los cortes pagados de forma individual de los realizados por clientes suscritos a un plan mensual, ofreciendo una visión clara de la rentabilidad de cada modalidad."
@@ -73,17 +78,9 @@
         "title": "Drive Hub",
         "description": "Proyecto frontend en React y TypeScript para organizar y presentar información relacionada con vehículos mediante una interfaz limpia y responsiva."
       },
-      "spotifyClone": {
-        "title": "Spotify Clone",
-        "description": "Mi primer proyecto usando React. Un proyecto frontend enfocado en recrear el diseño de Spotify, almacenando la información de la aplicación en localStorage."
-      },
-      "taskifyNode": {
-        "title": "Taskify Node",
-        "description": "API de gestión de tareas desarrollada con Node.js, aplicando conceptos fundamentales como creación de servidor HTTP, manejo de rutas, lectura y escritura de archivos, y tratamiento de solicitudes y respuestas."
-      },
-      "workoutTracker": {
-        "title": "Workout Tracker",
-        "description": "Aplicación fullstack CRUD para sesiones de entrenamiento, con manipulación de fecha y hora. Permite a los usuarios crear sus propios planes de entrenamiento, organizar ejercicios personalizados, seguir las actividades completadas y pendientes, y añadir notas sobre cómo se sintió cada ejercicio o qué les gustaría ajustar en el futuro."
+      "planeGraphAnalysis": {
+        "title": "Plane Graph Analysis",
+        "description": "Este proyecto automatiza la minería de interacciones (comentarios, cierres y revisiones de código) entre desarrolladores en el repositorio Plane (makeplane/plane), construye una red social de colaboración usando una estructura de grafo propia (AdjacencyListGraph/AdjacencyMatrixGraph) implementada desde cero, calcula métricas de centralidad (PageRank, Betweenness de Brandes, Closeness de Wasserman & Faust), detecta comunidades mediante el algoritmo de Label Propagation y exporta los datos para análisis visual interactivo en Gephi o en la web con Sigma.js."
       }
     }
   },

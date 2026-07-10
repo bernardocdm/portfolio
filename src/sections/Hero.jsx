@@ -42,11 +42,6 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0">
-        <img 
-          src={null} 
-          alt="Hero image" 
-          className="w-full h-full object-cover opacity-40"
-        />
         <div className="absolute inset-0 bg-linear-to-b from-background/20 via-background/80 to-background"></div>
       </div>
 
@@ -117,10 +112,10 @@ export default function Hero() {
               to-primary/10 blur-2xl animate-pulse"
               />
               <div className="relative glass rounded-full p-2 glow-border">
-                <img 
-                  src="/profile-photo.jpg" 
-                  alt="Bernardo Carvalho" 
-                  className="w-full max-w-140px sm:max-w-160px md:max-w-200px aspect-square h-200 object-cover rounded-full border-2 border-border hover:border-primary/50 transition-all duration-1000 animate-float"
+                <img
+                  src="/profile-photo.jpg"
+                  alt="Bernardo Carvalho"
+                  className="w-full aspect-square object-cover rounded-full border-2 border-border hover:border-primary/50 transition-all duration-1000 animate-float"
                   />
 
                 {/* FLOATING BADGE  */}

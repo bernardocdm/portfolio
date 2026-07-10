@@ -15,8 +15,8 @@
 
    "about": {
     "label": "About me",
-    "title": "Building",
-    "titleAccent": "the Future",
+    "title": "Who",
+    "titleAccent": "I Am",
     "paragraph1": "I'm a passionate software engineer with over 5 years of experience crafting digital products that make a difference. My journey started with a curiosity for how things work on the web, and it has evolved into a deep expertise in modern frontend technologies.",
     "paragraph2": "When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.",
     "capabilities": {
@@ -62,10 +62,15 @@
   
   "projects": {
     "label": "My Projects",
-    "title": "Be",
-    "titleAccent": "different",
+    "title": "What I've",
+    "titleAccent": "Built",
     "status": "In progress",
+    "viewMore": "See more projects",
     "items": {
+      "lumap": {
+      "title": "Lumap",
+      "description": "A full-stack web platform that streamlines industrial operations by managing customers, quotations, work orders, production workflow, and financial processes with real-time tracking."
+      },
       "barberFlow": {
         "title": "Barber Flow",
         "description": "Barber Flow is a complete solution for the financial and operational management of your barbershop. It allows you to track daily, weekly, and monthly revenue in detail, as well as monitor each barber's individual earnings. The software also distinguishes between one-time paid haircuts and services provided to clients subscribed to a monthly plan, giving a clear view of the profitability of each model."
@@ -74,17 +79,9 @@
         "title": "Drive Hub",
         "description": "A React and TypeScript frontend project for organizing and presenting vehicle-related information through a clean, responsive interface."
       },
-      "spotifyClone": {
-        "title": "Spotify Clone",
-        "description": "My first project using React. A frontend project focused on recreating the Spotify layout, with application data stored in localStorage."
-      },
-      "taskifyNode": {
-        "title": "Taskify Node",
-        "description": "A task management API built with Node.js, applying core concepts such as HTTP server creation, route handling, file reading and writing, and request and response processing."
-      },
-      "workoutTracker": {
-        "title": "Workout Tracker",
-        "description": "A fullstack CRUD application for workout sessions with date and time handling. It allows users to create their own workout plans, organize custom exercises, track completed and pending activities, and add notes about how each exercise felt or what they want to adjust in the future."
+      "planeGraphAnalysis": {
+        "title": "Plane Graph Analysis",
+        "description": "An automated pipeline that mines developer interactions (comments, issue closures, and code reviews) from the Plane repository (makeplane/plane) to build a collaboration network. It uses a custom graph structure (AdjacencyListGraph/AdjacencyMatrixGraph) built from scratch, computes centrality metrics (PageRank, Brandes' Betweenness, Wasserman & Faust Closeness), detects communities via Label Propagation, and exports the data for interactive visual analysis in Gephi or on the web with Sigma.js."
       }
     }
   },
