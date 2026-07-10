@@ -115,7 +115,7 @@ export default function Hero() {
                 <img
                   src="/profile-photo.jpg"
                   alt="Bernardo Carvalho"
-                  className="w-full aspect-square object-cover rounded-full border-2 border-border hover:border-primary/50 transition-all duration-1000 animate-float"
+                  className="w-full aspect-square object-cover object-top rounded-full border-2 border-border hover:border-primary/50 transition-all duration-1000 animate-float"
                   />
 
                 {/* FLOATING BADGE  */}
