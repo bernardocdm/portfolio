@@ -1,4 +1,4 @@
-import { AnimatedBorderButton } from "./animatedBorderButton";
+import { AnimatedBorderButton } from "./AnimatedBorderButton";
 import { Download } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
